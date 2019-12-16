@@ -6,6 +6,6 @@
         "console": true
     },
     "apiServer": {
-        "baseURL": "https://snp-server-app.herokuapp.com/"
+        "baseURL": "https://nodejs-fb-app.herokuapp.com/"
     }
 }
