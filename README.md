@@ -1,27 +1,39 @@
-# Angular8FbApp
+# Angular8 App Introduction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+Friends Book is a web application, through which you can interact with people virtually, create your network with new friends. You will be able to share your thoughts, pictures, message and advertisements among all of your friends. This application is implemented as a Full Stack application following MVC architecture. This is a RESTful web service. 
 
-## Development server
+## Use Cases
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The application is designed to provide user-specific functionality. There will be two users of this application. 
 
-## Code scaffolding
+Admin 
+-	Will be able to block the account of any user. 
+-	Will be able to change and reset the password. 
+-	Will be able to post any message or advertisement. 
+-	Will be able to manage profile details. 
+-	Will be able to hide the post of any user. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+User
+-	Will be able to register themselves using their personnel information. 
+-	Will be able to change and reset their password. 
+-	Will be able to post any message, article or upload picture. 
+-	Will be able to send, accept or reject friend requests. 
+-	Will be able to manage their profile details. 
+-	Will be able to hide their own post. 
+-	Will be able see posts from all the users. There will be no way to restrict the posts from any user.  
 
-## Build
+## Code Implementation Specification
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Below are the technical specifications, will to be used in application development – 
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1	Front End	Angular 8 (with HTML, CSS, AJAX)
+2	Back End	Node JS
+3	Design Tool	Angular Material
+4	Code Repository	Git Hub
+5	IDE	VS Code
+6	Database	MongoDB
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+You will need associated back end app, developed in Node js, to use this application, I will upload soon that also.
+To get more help on the Angular App reachout to me at @AnilVishvkarma2015
