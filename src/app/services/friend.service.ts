@@ -34,12 +34,6 @@ export class FriendService {
         }));
     };
 
-    getFriendByUserId(userId: String) {
-        return this.http.post(this.apiBaseURL + 'friends/findfriendbyuserid', { userId: userId }, this.header.requestHeaders()).pipe(map(res => {
-            return res;
-        }));
-    };
-
     updateFriendRequest(updatedRequest) {
         return this.http.put(this.apiBaseURL + 'friends/' + updatedRequest.id, updatedRequest).pipe(res => {
             return res;

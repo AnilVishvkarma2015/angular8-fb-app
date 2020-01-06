@@ -35,18 +35,6 @@ export class ProfileComponent extends BaseComponent implements OnInit {
     this.loadActiveUserConnections(this.activeUserObject._id);
   }
 
-  private createImageFromBlob(image: Blob) {
-    let reader = new FileReader();
-    reader.addEventListener("load", () => {
-      this.imageToShow = reader.result;
-    }, false);
-
-    if (image) {
-      this.isImageAvailable = true;
-      reader.readAsDataURL(image);
-    }
-  }
-
   loadActiveUserPhoto(photoId: String) {
     this.fileService.getPhotoById(photoId).pipe(takeUntil(this.unsubscribe)).subscribe(result => {
       this.createImageFromBlob(result);
@@ -77,5 +65,18 @@ export class ProfileComponent extends BaseComponent implements OnInit {
         localStorage.setItem('currentUserPhotoId', newPhotoId);
         this.ngOnInit();
       });
+  }
+
+  
+  private createImageFromBlob(image: Blob) {
+    let reader = new FileReader();
+    reader.addEventListener("load", () => {
+      this.imageToShow = reader.result;
+    }, false);
+
+    if (image) {
+      this.isImageAvailable = true;
+      reader.readAsDataURL(image);
+    }
   }
 }

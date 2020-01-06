@@ -20,12 +20,6 @@ export class PostService {
         });
     }
 
-    uploadPostImage(newImagePayload) {
-        return this.http.post(this.apiBaseURL + 'posts/uploadpostimage', newImagePayload).pipe(res => {
-            return res;
-        });
-    }
-
     getAllPosts() {
         return this.http.get<Post[]>(this.apiBaseURL + 'posts/');
     }
@@ -50,12 +44,6 @@ export class PostService {
 
     updatePost(updatedPost: Post) {
         return this.http.put<Post>(this.apiBaseURL + 'posts/' + updatedPost.id, updatedPost).pipe(res => {
-            return res;
-        });
-    };
-
-    deletePost(deletedPost: Post) {
-        return this.http.delete<Post>(this.apiBaseURL + 'posts/' + deletedPost.id).pipe(res => {
             return res;
         });
     };
