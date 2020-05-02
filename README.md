@@ -26,14 +26,15 @@ User
 
 Below are the technical specifications, will to be used in application development – 
 
-1	Front End	Angular 8 (with HTML, CSS, AJAX)
-2	Back End	Node JS
-3	Design Tool	Angular Material
-4	Code Repository	Git Hub
-5	IDE	VS Code
-6	Database	MongoDB
+1.	Front End	- Angular 8 (with HTML5, CSS3/SCSS, AJAX)
+2.	Back End - Node JS
+3.	Design Tool -	Angular Material
+4.	Code Repository - Git Hub
+5.	IDE	- Visual Studio Code
+6.	Database - MongoDB
 
 ## Further help
 
-You will need associated back end app, developed in Node js, to use this application, I will upload soon that also.
-To get more help on the Angular App reachout to me at @AnilVishvkarma2015
+You will need to execute back-end app as well which contain all the REST API calls required for this application. Backend application is available here - https://github.com/AnilVishvkarma2015/nodejs-fb-app which is developed in Node JS with MongoDB database.
+
+This application is hosted on cloud and can be accessed at https://angular8-fb-app.herokuapp.com
